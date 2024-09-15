@@ -12,23 +12,19 @@ class _CardItemState extends State<CardItem> {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      margin: EdgeInsetsDirectional.fromSTEB(8, 8, 8, 8),
-      padding: EdgeInsetsDirectional.all(4),
+      margin: const EdgeInsetsDirectional.fromSTEB(8, 8, 8, 8),
+      padding: const EdgeInsetsDirectional.all(4),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(8),
       ),
       child: GridTile(
-        child: Container(
-          color: Colors.grey,
-          child: Image.asset('assets/morty.jpg'),
-        ),
         footer: Container(
           width: double.infinity,
-          padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+          padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
           color: Colors.black54,
           alignment: Alignment.bottomCenter,
-          child: Text(
+          child: const Text(
             ' T shirt',
             style: TextStyle(
               height: 1.3,
@@ -41,7 +37,11 @@ class _CardItemState extends State<CardItem> {
             textAlign: TextAlign.center,
           ),
         ),
+        child: Container(
+          color: Colors.grey,
+          child: Image.asset('assets/morty.jpg'),
+        ),
       ),
-    );;
+    );
   }
 }

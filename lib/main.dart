@@ -1,12 +1,12 @@
 import 'package:bot_toast/bot_toast.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:mindsetfinalprojectecommerce/features/splash/views/screens/splash_screen.dart';
+
 import 'core/config/theme/dark_theme.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
+
   runApp(const MyApp());
 }
 
@@ -22,7 +22,6 @@ class MyApp extends StatelessWidget {
       theme: LightTheme.getTheme(),
       debugShowCheckedModeBanner: false,
       home: const SplashScreen(),
-
     );
   }
 }

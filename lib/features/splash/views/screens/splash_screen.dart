@@ -1,7 +1,8 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'dart:async';
-import '../../../myCards/view/screens/add_review.dart';
+import 'package:mindsetfinalprojectecommerce/features/home/view/screens/home_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -23,7 +24,7 @@ class _SplashScreenState extends State<SplashScreen> {
     });
     Timer(const Duration(milliseconds: 5000), () {
       Navigator.of(context)
-          .pushReplacement(SlideTransitionAnimation(AddReview(onRatingSelected: (_) {  },)));
+          .pushReplacement(SlideTransitionAnimation(const HomeScreen()));
     });
   }
 
