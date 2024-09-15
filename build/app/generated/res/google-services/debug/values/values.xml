@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gcm_defaultSenderId" translatable="false">660756432391</string>
+    <string name="google_api_key" translatable="false">AIzaSyCFBiVCiUxHgj5OVeXqhvkzRYg8hoh67tM</string>
+    <string name="google_app_id" translatable="false">1:660756432391:android:47972c56f77a6062338ca2</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCFBiVCiUxHgj5OVeXqhvkzRYg8hoh67tM</string>
+    <string name="google_storage_bucket" translatable="false">mindset-final-project.appspot.com</string>
+    <string name="project_id" translatable="false">mindset-final-project</string>
+</resources>
